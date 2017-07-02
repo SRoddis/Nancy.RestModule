@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/0gf5r1lkqub9uou7?svg=true)](https://ci.appveyor.com/project/SRoddis/nancy-restcontroller)
+[![Build status](https://ci.appveyor.com/api/projects/status/8lbhpmgq03y31e62?svg=true)](https://ci.appveyor.com/project/SRoddis/nancy-restmodule)
 
 # Nancy.RestModule
 

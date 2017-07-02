@@ -9,7 +9,7 @@
     <iconUrl>https://raw.githubusercontent.com/SRoddis/Nancy.RestModule/master/NuGet/nuget.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Lightweight .NET component to create simple REST resources for Nancy. Nancy.RestModule decouples the module and the controller.</description>
-    <copyright>Copyright 2017 Sean Roddis Software Ltd</copyright>
+    <copyright>Copyright 2017 Sean Roddis</copyright>
     <tags>nancy module controller rest testing web rest</tags>
     <dependencies>
       <dependency id="Nancy" version="1.4.3" />
