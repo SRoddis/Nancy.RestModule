@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Nancy.RestModule</id>
+    <version>$version$</version>
+    <authors>Sean Roddis (@sroddis)</authors>
+    <licenseUrl>https://github.com/SRoddis/Nancy.RestModule/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/SRoddis/Nancy.RestModule</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/SRoddis/Nancy.RestModule/master/NuGet/nuget.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Lightweight .NET component to create simple REST resources for Nancy. Nancy.RestModule decouples the module and the controller.</description>
+    <copyright>Copyright 2017 Sean Roddis Software Ltd</copyright>
+    <tags>nancy module controller rest testing web rest</tags>
+    <dependencies>
+      <dependency id="Nancy" version="1.4.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Nancy.RestModule\bin\Release\Nancy.RestModule.dll" target="lib\portable-windows8+net45" />
+    <file src="..\Nancy.RestModule\bin\Release\Nancy.RestModule.dll" target="lib\portable-net45+win+wp8+wpa81" />
+    <file src="..\Nancy.RestModule\bin\Release\Nancy.RestModule.dll" target="lib\portable-net45+sl50+MonoAndroid10+MonoTouch10" />
+  </files>
+</package>
