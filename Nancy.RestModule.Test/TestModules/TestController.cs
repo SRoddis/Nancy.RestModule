@@ -3,7 +3,7 @@ using System.Linq;
 using Nancy.RestModule.Extensions;
 using Nancy.RestModule.Models;
 
-namespace Nancy.RestModule.Test.Integration.TestModules
+namespace Nancy.RestModule.Test.TestModules
 {
     public class TestController
     {

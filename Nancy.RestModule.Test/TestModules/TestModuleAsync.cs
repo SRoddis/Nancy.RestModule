@@ -1,10 +1,11 @@
-﻿namespace Nancy.RestModule.Test.Integration.TestModules
+﻿namespace Nancy.RestModule.Test.TestModules
 {
-    public class TestModule : RestModule
+    public class TestModuleAsync : RestModuleAsync
     {
-        private readonly TestController _controller = new TestController();
+        private readonly TestControllerAsync _controller = new TestControllerAsync();
 
-        public TestModule() : base("/test")
+        public TestModuleAsync()
+            : base("/testAsync")
         {
             GetHandler("/", _controller.List);
 

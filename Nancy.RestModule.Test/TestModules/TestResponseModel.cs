@@ -1,4 +1,4 @@
-﻿namespace Nancy.RestModule.Test.Integration.TestModules
+﻿namespace Nancy.RestModule.Test.TestModules
 {
     public class TestResponseModel
     {

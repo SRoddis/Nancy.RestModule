@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/8lbhpmgq03y31e62?svg=true)](https://ci.appveyor.com/project/SRoddis/nancy-restmodule)
+[![Build status](https://ci.appveyor.com/api/projects/status/8lbhpmgq03y31e62?svg=true)](https://ci.appveyor.com/project/SRoddis/nancy-restmodule) [![Coverage Status](https://coveralls.io/repos/github/SRoddis/Nancy.RestModule/badge.svg?branch=master)](https://coveralls.io/github/SRoddis/Nancy.RestModule?branch=master)
 
 # Nancy.RestModule
 
