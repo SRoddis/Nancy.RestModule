@@ -44,6 +44,21 @@ namespace Nancy.RestModule.Test.Integration.Modules
         }
 
         [Test]
+        public void When_put_letter_instead_of_int_Then_Exception_is_thrown()
+        {
+            // Act
+            BrowserResponse post = _browser.Put("/test/a", with =>
+            {
+                with.HttpRequest();
+                with.Query("value", "3");
+            });
+
+            // Assert
+            //TODO: mapping exceptions to responses
+            post.StatusCode.Should().Be(HttpStatusCode.InternalServerError);
+        }
+
+        [Test]
         public void When_post_Then_response_is_Created()
         {
             // Act
