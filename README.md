@@ -2,7 +2,7 @@
 
 # Nancy.RestModule
 
-Nancy.RestModule is designed to create REST resources in a fast and simple way (with NancyFx). The `RestModule` decouples the `NancyModule` from your self-implemented controller, so the controller can be tested easily. 
+Nancy.RestModule is designed to create REST resources in a fast and simple way with NancyFx. The `RestModule` decouples the `NancyModule` from your self-implemented controller, so the controller can be tested easily. 
 
 Nancy.RestModule can handle `DELETE`, `GET`, `POST` and `PUT` requests and provides a simple JSON.
 With the generic request handlers you are able to define your API interface by simple `RequestModels` which are bind automatically from NancyFx.
@@ -17,7 +17,7 @@ PM> Install-Package Nancy.RestModule
 
 # How to use
 
-1. Create your custom `RestModule` in your NancyFx-Application.
+1. Create your `RestModule` in your NancyFx-Application.
     ```csharp
     public class CustomerModule : RestModule
     {
@@ -28,7 +28,7 @@ PM> Install-Package Nancy.RestModule
     }
     ```
 2. Create your custom `Controller` and register it to the `DIContainer`.
-Now the `Controller` can be easily tested by `UnitTests` without `Nancy.Testing`
+Now the `Controller` can be easily tested with `UnitTests` without `Nancy.Testing`
 
     ```csharp
     public class CustomerController : ICustomerController
@@ -84,25 +84,25 @@ In the repository you can find [Nancy.RestController.Demo]( https://github.com/S
     ```json
     [
         {
-            "id": "a6617590-ac2f-453e-ad3e-f9f1a409898f",
+            "id": <Guid>,
             "firstName": "Jeff",
             "lastName": "Dunham",
             "age": 56,
-            "created": "2017-07-02T18:08:56.7914955Z"
+            "created": <current datetime>
         },
         {
-            "id": "c886e841-3946-4f89-a46d-206cb29f407d",
+            "id": <Guid>,
             "firstName": "Lee",
             "lastName": "Evans",
             "age": 53,
-            "created": "2017-07-02T18:08:56.7924963Z"
+            "created": <current datetime>
         },
         {
-            "id": "748e9266-02fb-445b-8fd1-11ede9093331",
+            "id": <Guid>,
             "firstName": "John",
             "lastName": "Cleese",
             "age": 79,
-            "created": "2017-07-02T18:08:56.7924963Z"
+            "created": <current datetime>
         }
     ]
     ```
@@ -110,7 +110,7 @@ In the repository you can find [Nancy.RestController.Demo]( https://github.com/S
 
 ## Copyright
 
-Copyright © 2017 Sean Roddis
+Copyright Â© 2017 Sean Roddis
 
 ## License
 
