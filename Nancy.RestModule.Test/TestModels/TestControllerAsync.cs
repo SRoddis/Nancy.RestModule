@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Nancy.RestModule.Extensions;
 using Nancy.RestModule.Models;
 
-namespace Nancy.RestModule.Test.TestModules
+namespace Nancy.RestModule.Test.TestModels
 {
     public class TestControllerAsync
     {

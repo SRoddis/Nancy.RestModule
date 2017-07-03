@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Nancy.RestModule.Test.TestModules;
 
 namespace Nancy.RestModule.Test.TestModels
 {

@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using Nancy.RestModule.Test.TestModules;
+using Nancy.RestModule.Test.TestModels;
 using NUnit.Framework;
 
 namespace Nancy.RestModule.Test.Unit.Modules
