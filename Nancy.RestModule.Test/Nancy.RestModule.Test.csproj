@@ -86,14 +86,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Extensions\ResponseModelExtension_when_create_response.cs" />
-    <Compile Include="Models\ResponseModel_when_creating.cs" />
-    <Compile Include="Modules\RestModule_when_dispatch.cs" />
+    <Compile Include="Integration\Modules\RestModuleAsync_when_dispatch.cs" />
+    <Compile Include="Integration\TestModules\TestControllerAsync.cs" />
+    <Compile Include="Integration\TestModules\TestModuleAsync.cs" />
+    <Compile Include="Unit\Extensions\ResponseModelExtension_when_create_response.cs" />
+    <Compile Include="Unit\Models\ResponseModel_when_creating.cs" />
+    <Compile Include="Integration\Modules\RestModule_when_dispatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestModules\TestController.cs" />
-    <Compile Include="TestModules\TestModule.cs" />
-    <Compile Include="TestModules\TestRequestModel.cs" />
-    <Compile Include="TestModules\TestResponseModel.cs" />
+    <Compile Include="Integration\TestModules\TestController.cs" />
+    <Compile Include="Integration\TestModules\TestModule.cs" />
+    <Compile Include="Integration\TestModules\TestRequestModel.cs" />
+    <Compile Include="Integration\TestModules\TestResponseModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

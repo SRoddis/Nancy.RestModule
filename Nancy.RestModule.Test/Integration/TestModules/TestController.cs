@@ -3,15 +3,20 @@ using System.Linq;
 using Nancy.RestModule.Extensions;
 using Nancy.RestModule.Models;
 
-namespace Nancy.RestModule.Test.TestModules
+namespace Nancy.RestModule.Test.Integration.TestModules
 {
     public class TestController
     {
-        private readonly List<TestResponseModel> _data = new List<TestResponseModel>
+        private readonly List<TestResponseModel> _data;
+
+        public TestController()
         {
-            new TestResponseModel("1"),
-            new TestResponseModel("2")
-        };
+            _data = new List<TestResponseModel>
+            {
+                new TestResponseModel("1"),
+                new TestResponseModel("2")
+            };
+        }
 
         public ResponseModel List()
         {
@@ -41,7 +46,7 @@ namespace Nancy.RestModule.Test.TestModules
         {
             _data.RemoveAt(model.Id);
 
-            return new ResponseModel {StatusCode = HttpStatusCode.OK};
+            return new ResponseModel {StatusCode = HttpStatusCode.NoContent};
         }
     }
 }

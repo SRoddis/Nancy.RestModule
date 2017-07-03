@@ -2,7 +2,7 @@
 using Nancy.RestModule.Models;
 using NUnit.Framework;
 
-namespace Nancy.RestModule.Test.Models
+namespace Nancy.RestModule.Test.Unit.Models
 {
     [TestFixture]
     public class ResponseModel_When_creating

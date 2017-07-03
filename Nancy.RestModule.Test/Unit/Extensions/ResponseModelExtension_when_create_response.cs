@@ -3,7 +3,7 @@ using Nancy.RestModule.Extensions;
 using Nancy.RestModule.Models;
 using NUnit.Framework;
 
-namespace Nancy.RestModule.Test.Extensions
+namespace Nancy.RestModule.Test.Unit.Extensions
 {
     [TestFixture]
     public class ResponseModelExtension_when_create_response

@@ -1,9 +1,8 @@
 version: 1.0.{build}
 
-#uncomment if tests are added
-#environment:
-#  COVERALLS_REPO_TOKEN:
-#    secure: pmCqwxeGUuuRtSI8dRASV4pSiEluhcXR3xwFkYNnIfzStFtj7/4UQ4BbR9FxNHtf
+environment:
+  COVERALLS_REPO_TOKEN:
+    secure: 2s5b3QG0J9qey9fgGMTtVP/AFWh2RH3FOm82ybS/MLHSjHwUgKw3h64//8ZUmf4+
 
 assembly_info:
   patch: true
@@ -22,9 +21,7 @@ before_build:
 
 after_test:
    - ps: .\nuget\pack.ps1
-
-#uncomment if tests are added
-#   - cmd: .\post_build.cmd
+   - cmd: .\post_build.cmd
 
 artifacts:
   - path: Nancy.RestModule\bin\Release\Nancy.RestModule.dll
