@@ -16,10 +16,5 @@
 
             DeleteHandler<TestRequestModel>("/{id}", _controller.Delete);
         }
-
-        protected override void DoValidate<TRequest>(TRequest model)
-        {
-            // No validation
-        }
     }
 }
