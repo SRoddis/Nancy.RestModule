@@ -77,7 +77,7 @@ Compile, run and enjoy the simplicity!
 
 
 ## Demo
-In the repository you can find [Nancy.RestController.Demo]( https://github.com/SRoddis/Nancy.RestModule/tree/master/Nancy.Controller.Demo) which is a simple demo to show how to use Nancy.RestModule. 
+In the repository you can find [Nancy.RestModule.Demo]( https://github.com/SRoddis/Nancy.RestModule/tree/master/Nancy.RestModule.Demo) which is a simple demo to show how to use Nancy.RestModule. 
 
 1. Compile and run the demo application.
 2. Now you can [list all customers](http://localhost:53638/customer/) and should get the following response.

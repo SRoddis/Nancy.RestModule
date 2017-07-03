@@ -25,7 +25,6 @@ namespace Nancy.RestModule.Test.Modules
             {
                 with.HttpRequest();
                 with.Header("Accept", "application/json");
-
             });
 
             // Assert
