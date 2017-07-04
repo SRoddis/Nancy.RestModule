@@ -59,10 +59,13 @@ namespace Nancy.RestModule.Test.Integration.Modules
         }
 
         [Test]
-        public void When_put_value_is_empty_Then_Exception_is_thrown()
+        public void When_put_and_validation_fails_Then_Exception_is_thrown()
         {
             // Act
-            BrowserResponse post = _browser.Put("/test/1", with => with.HttpRequest());
+            BrowserResponse post = _browser.Put("/test/1", with => {
+                with.HttpRequest();
+                with.Query("integer", "11");
+            });
 
             // Assert
             post.StatusCode.Should().Be(HttpStatusCode.InternalServerError);

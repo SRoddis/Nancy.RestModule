@@ -6,7 +6,7 @@ namespace Nancy.RestModule.Test.TestModels
     {
         public TestValidator()
         {
-            RuleFor(request => request.Value).NotEmpty();
+            RuleFor(request => request.Integer).LessThan(10);
         }
     }
 }
